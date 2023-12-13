@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="C:\Users\Okikiola\Documents\Icons\fontawesome-free-6.4.2-web\css\all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" charset="utf-8">
+    <style>
+        body {
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin: 0;
+            width: 100%;
+            font-family: 'Product Sans'!important;
+            scroll-behavior: smooth;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            position: relative;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            transition: 0.2s;
+            scroll-behavior: smooth;
+        }
+
+        button {
+            user-select: none;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        @font-face {
+            font-family: 'Product Sans';
+            src: url(product-sans.ttf);
+        }
+
+        @font-face {
+            font-family: kurale;
+            src: url(kurale.ttf);
+        }
+    </style>
+    <script src="beforeScript.js"></script>
+</head>
+
+<body>
+    <div class="top_bar" id="top_bar">
+        <div style="border-radius: 50%;" class="top_bar_div_rounded"><a href="#homepage" title="Home"
+                style="width: 50px; height: auto; display: inline-block;"><img src="svg/home.svg"
+                    style="width: 100%; height: 100%;"></a></div>
+        <div><a href="#pictures" style="width: 100%; height: 100%; display: inline-block;">Pictures</a></div>
+        <div><a>About</a></div>
+        <div><a>Contact</a></div>
+        <div style="border-radius: 50%;" class="top_bar_div_rounded"><img src="svg/info.svg" style="width: 70%; height: 70%; margin-top: 15%;"></div>
+    </div>
+
+    <span id="homepage" style="width: 0; height: 0; margin: 0; padding: 0;"></span>
+
+    <div class="top_bar_mobile">
+        <div style="margin-left: 5px;">
+            <a style="background-color: cornsilk; width: 52px; height: 52px; border-radius: 50%; display: inline-block; overflow: hidden; margin-top: 4px; line-height: 47px;  font-size: 30px; color: black;" href="#"><img src="svg/home.svg" style="width: 75%; height: 75%; margin-top: 5%;"></a>
+            <a style=" display: inline-block; font-size: 35px; overflow: hidden; margin-left: 15px; color: black; line-height: 52px;" href="#">Home</a>
+        </div>
+        <div><a style="line-height: 60px;">More</a></div>
+        <div style="width: 60px; height: 60px; border-radius: 50%; background-color: cornsilk; margin-left: 15px;"><img src="svg/info.svg" style="width: 45px; height: 45px; margin: auto; margin-top: 7.5px; display: block; transition: 0.3s;"></div>
+    </div>
+
+    <div class="homepage">
+        <div>
+            <h1 style="text-align: center; font-family: kurale;">WELCOME TO A WEB DESIGNER'S WEBSITE PROTOTYPE.</h1>
+            <h3 style="text-align: center; font-family: kurale;">KIndly Enjoy the little details and animations by making sure to interact with all elements on this page.</h3>
+        </div>
+        
+    <div class="landscapes_section">
+        <div><h1>Some Landscapes Slideshow</h1></div>
+        <div class="slideshow_container" id="slideshowContainer">
+        <div class="slideshow_content" id="slideshowContent">
+        </div>
+        </div>
+    </div>
+
+    </div>
+
+
+    <h1 class="some_pic_h1" style="font-family: kurale;" id="pictures">Some Pictures...</h1>
+    <div class="home_card_container">
+    <div><img src="images/IMG_1956.jpg" onclick="modalizeImage(this)"></div>
+    <div><img src="images/IMG_1957.jpg" onclick="modalizeImage(this)"></div>
+    <div><img src="images/IMG_1964.JPG" onclick="modalizeImage(this)"></div>
+    </div>
+
+    <div class="modal_image_container1 displayNone" id="modalContainer1">
+        <div class="X_div" onclick="closeModal()">
+        <div class="first_dash_X"></div>
+        <div class="second_dash_X"></div>
+        <div class="third_dash_X"></div>
+    </div>
+        <div class="modal_image_content1"><img id="modalImage1"></div>
+    </div>
+
+    <div style="background-color: cornsilk;">
+
+    </div>
+
+    <script src="script.js">
+        
+    </script>
+</body>
+
+</html>

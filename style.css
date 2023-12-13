@@ -1,0 +1,577 @@
+.top_bar {
+    transition: 0.4s;
+    position: fixed;
+    left: 0.5%;
+    top: 10px;
+    z-index: 5;
+    width: 99%;
+    height: 75px;
+    background-color: rgba(0, 0, 0, 0.504);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 140px auto auto auto 140px;
+    align-content: space-evenly;
+    column-gap: 40px;
+    margin: auto;
+    border-radius: 35px;
+    backdrop-filter: blur(5px);
+    font-family: kurale;
+    font-weight: bold;
+}
+
+.top_bar:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.top_bar div {
+    user-select: none;
+    transition: 0.35s;
+    height: 60px;
+    background-color: rgba(255, 248, 220, 0.8);
+    border-radius: 25px;
+    color: rgb(33, 29, 30);
+    font-size: xx-large;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.top_bar div:hover {
+    background-color: rgba(255, 248, 220, 0.65);
+    color: rgb(34, 34, 34);
+    box-shadow: 0 0 12px 3px cornsilk;
+    transform: scale(1.05);
+}
+
+.top_bar div:active {
+    transition: 0.15s;
+    color: blue;
+    background-color: cornsilk;
+    transform: scale(0.8);
+}
+
+.top_bar_div_rounded {
+
+    width: 60px;
+    margin: auto;
+}
+
+.top_bar_mobile {
+    position: fixed;
+    left: 0.5%;
+    top: 10px;
+    margin: 0;
+    z-index: 5;
+    display: none;
+    transition: 0.35s;
+    grid-template-columns: 40% 35% 15%;
+    width: 99%;
+    height: 75px;
+    background-color: rgba(100, 88, 37, 0.504);
+    overflow: hidden;
+    margin: auto;
+    border-radius: 35px;
+    backdrop-filter: blur(5px);
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.top_bar_mobile div {
+    transition: 0.35s;
+    height: 60px;
+    width: auto;
+    background-color: rgba(255, 248, 220, 0.8);
+    border-radius: 25px;
+    color: rgb(33, 29, 30);
+    font-size: 35px;
+    text-align: center;
+}
+
+.top_bar_mobile div:hover {
+    background-color: rgba(255, 248, 220, 0.65);
+    color: rgb(34, 34, 34);
+    box-shadow: 0 0 12px 3px cornsilk;
+    transform: scale(1.05);
+}
+
+.top_bar_mobile div:active {
+    transition: 0.15s;
+    color: blue;
+    background-color: cornsilk;
+    transform: scale(0.8);
+}
+
+.homepage {
+    display: block;
+    margin: auto;
+    margin-top: 105px;
+    margin-bottom: 15px;
+    background-color: cornsilk;
+    width: 98%;
+    border-radius: 25px;
+    padding: 8px 16px;
+}
+
+.homepage div:first-child {
+    display: block;
+    text-align: center;
+}
+
+.landscapes_section{
+    display: grid;
+    grid-template-columns: 35% 60%;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 35px 0;
+    justify-content: space-around;
+}
+
+.landscapes_section div:first-child{
+    text-align: center;
+    align-self: center;
+}
+
+.landscapes_section div h1::after{
+    content: '\1000';
+    margin-left: 5px;
+}
+
+
+.slideshow_container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.slideshow_content {
+    transition: 0.3s;
+    background-color: rgba(167, 158, 120, 0.551);
+    padding: 8px 12px;
+    border: 5px solid rgba(171, 171, 171, 0.424);
+    border-radius: 30px;
+    overflow: hidden;
+   
+}
+
+#slideshowImage {
+    z-index: 2;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 30px;
+    animation-name: slideshowImage;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+}
+
+.errorImage {
+    transition: 0.3s;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    font-size: large;
+    margin: auto;
+    font-family: kurale;
+}
+
+.some_pic_h1 {
+    font-size: 45px;
+    text-align: center;
+    margin: auto;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 98%;
+    background-color: cornsilk;
+    border-radius: 25px;
+    height: 75px;
+    line-height: 75px;
+}
+
+.home_card_container {
+    transition: 0.35s;
+    overflow: hidden;
+    background-color: cornsilk;
+    width: 100%;
+    height: 440px;
+    border-radius: 30px;
+    margin: auto;
+    width: 99%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.home_card_container div {
+    cursor: pointer;
+    transition: 0.35s;
+    background-color: rgba(59, 56, 41, 0.302);
+    background: linear-gradient(160deg, #fff8dcb1 25%, rgba(128, 128, 128, 0.648) 60%, rgba(73, 73, 6, 0.343) 100%);
+    width: 250px;
+    height: 360px;
+    column-gap: 25px;
+    border-radius: 25px;
+    overflow: hidden;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 2px 5px black;
+}
+
+.home_card_container div img {
+    display: block;
+    transition: 0.45s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 20px;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 8px;
+
+}
+
+.home_card_container div img:hover {
+    transform: scale(1.2) translate(0, 0);
+}
+
+.modal_image_container1 {
+    display: block;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    animation-name: show_modal_container;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+
+.modal_image_container1 .modal_image_content1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    cursor: pointer;
+    animation-name: anim_modal_content;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+}
+
+.modal_image_container1 .modal_image_content1 img {
+    max-width: 100%;
+    max-height: 95%;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-top: 0;
+    transition: 0.1s;
+    border-radius: 15px;
+}
+
+.modal_image_container1 div img:active {
+    transform: scale(1.05);
+    border-radius: 0;
+}
+
+.displayNone {
+    display: none;
+}
+
+.displayBlock{
+    display: block;
+}
+
+.X_div {
+    transition: 0.35s;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    padding-top: 7.5px;
+    overflow: hidden;
+    cursor: pointer;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    border-radius: 50%;
+}
+
+.X_div:active .first_dash_X, .X_div:active .second_dash_X, .X_div:active .third_dash_X {
+    background-color: red;
+}
+
+.X_div:active {
+    transition: 0.1s;
+    transform: scale(0.9);
+    background-color: rgba(0, 0, 0, 0.4);
+    transform: scale(1.25);
+}
+
+.first_dash_X, .second_dash_X, .third_dash_X {
+    border-radius: 5px;
+    background-color: white;
+    margin: 5px auto;
+    width: 35px;
+    height: 5px;
+    transition: 0.44s;
+    animation-name: blink_red_white;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.first_dash_X {
+    transform: rotate(45deg) translate(7px, 7px);
+    -webkit-transform: rotate(45deg) translate(7px, 7px);
+    border-radius: 3px;
+}
+
+.second_dash_X {
+    opacity: 0;
+}
+
+.third_dash_X {
+    transform: rotate(-45deg) translate(7px, -7px);
+    -webkit-transform: rotate(-45deg) translate(7px, -7px);
+    border-radius: 3px;
+}
+
+
+
+@keyframes show_modal_container {
+    from {
+        opacity: 0.3;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes anim_modal_content {
+    0% {
+        opacity: 0.4;
+        transform: scale(0.8);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink_red_white {
+    0% {
+        background-color: white;
+        rotate: -180deg;
+    }
+
+    25% {
+        background-color: rgb(229, 142, 142);
+        rotate: 0deg;
+    }
+
+    50% {
+        background-color: rgb(154, 14, 14);
+    }
+
+    75% {
+        background-color: red;
+
+    }
+
+    100% {
+        background-color: white;
+
+    }
+}
+
+@keyframes slideshowImage {
+    0% {
+        transform: scale(1.3);
+        filter: brightness(200%) grayscale(100%);
+        border-radius: 0;
+    }
+
+    10%{
+        filter: brightness(100%) grayscale(0);
+        border-radius: 25px;
+    }
+
+    25% {
+        transform: scale(1.1);
+    }
+
+    50%{
+        transform: scale(1);
+    }
+
+    88% {
+        transform: scale(1.1);
+        filter: blur(0);
+    }
+
+    92% {
+        transform: scale(1);
+        border-radius: 25px;
+        filter: brightness(100%) grayscale(0);
+    }
+
+    100% {
+        transform: scale(1.3);
+        filter: brightness(200%) grayscale(100%);
+        border-radius: 0;
+    }
+}
+
+
+
+@media screen and (max-width:300px) {
+    .some_pic_h1 {
+        font-size: 15px;
+        height: 35px;
+        line-height: 35px;
+    }
+
+    .modal_image_container1 .modal_image_content1 img {
+        max-height: 100%;
+        max-width: 95%;
+    }
+
+    .slideshow_content{
+        padding: 2px 4px;
+        padding-top: 3px;
+    }
+
+    .landscapes_section div h1{
+        font-size: medium;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .top_bar {
+        display: none;
+    }
+
+    .top_bar_mobile {
+        display: grid;
+        overflow-x: scroll;
+    }
+
+    .some_pic_h1 {
+        font-size: 35px;
+        height: 65px;
+        line-height: 65px;
+    }
+
+    .home_card_container {
+        display: block;
+        height: auto;
+    }
+
+    .home_card_container div {
+        margin: auto;
+        display: block;
+        width: 90vw;
+        margin-bottom: 35px;
+    }
+
+    .home_card_container div:first-child {
+        margin-top: 25px;
+    }
+
+    .modal_image_container1 .modal_image_content1 img {
+        max-height: 100%;
+        max-width: 95%;
+    }
+
+    .landscapes_section{
+        grid-template-columns: auto;
+    }
+
+    .slideshow_content{
+        padding: 4px 8px;
+        padding-top: 6px;
+    }
+
+    .landscapes_section div h1{
+        font-size: medium;
+    }
+
+    .landscapes_section div h1:after{
+        content: '\1001';
+
+    }
+}
+
+@media screen and (max-width:800px) {
+    .top_bar {
+        grid-template-columns: 70px auto auto auto 70px;
+    }
+
+    .top_bar div {
+        font-size: x-large;
+    }
+
+    .home_card_container {
+        grid-template-columns: auto auto;
+        row-gap: 25px;
+        height: auto;
+    }
+
+    .home_card_container div:last-child {
+        margin: auto;
+    }
+
+    .modal_image_container1 .modal_image_content1 img {
+        max-height: 95%;
+        max-width: 95%;
+    }
+
+    .homepage div h1 {
+        font-size: x-large;
+    }
+
+    .landscapes_section div h1{
+        font-size: x-large;
+    }
+}
+
+@media screen and (max-width:1024px) {}
+
+@media screen and (min-width:1440px) {
+    .top_bar {
+        grid-template-columns: 300px auto auto auto 300px;
+        height: 200px;
+        column-gap: 60px;
+    }
+
+    .top_bar div {
+        height: 140px;
+        font-size: 50px;
+        line-height: 140px;
+    }
+
+    .top_bar_div_rounded {
+        width: 140px;
+    }
+}
